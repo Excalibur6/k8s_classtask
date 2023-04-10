@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    dockerimagename = "ikramkhan1/mlops_ct2"
+    dockerimagename = "i10431/mlops-ca2"
     dockerImage = ""
   }
 
@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ikram554/Microservice-using-k8s.git']])
+        checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Excalibur6/k8s_classtask.git']])
       }
     }
 
